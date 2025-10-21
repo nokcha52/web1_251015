@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>속성</title>
+    <style>
+        .meow {
+            color: blue;
+            font-size: 50px;
+        }
+
+        .dog {
+            background-color: blanchedalmond;
+        }
+
+        #id_section {
+            width: 100%;
+            height: 500px;
+            background-color: black;
+        }
+
+
+    </style>
+
+
 </head>
 <body>
     <img src="./웹_단풍.jpg" alt="단풍사진">
@@ -13,5 +33,25 @@
     <a href="https://www.netflix.com/kr/">넷플릭스 바로가기</a>
 
     <span style="color: red;">인라인스타일속성</span>
+
+    <!-- class id 이름 작명 규칙
+        1. 소문자 사용
+        2. 단어와 단어 사이는 _-로 구분
+        3. 숫자 사용 가능
+        4.숫자가 옆에 오지 않도록 설정
+    -->
+
+
+    <!-- class란? css와 연결하기 위한 이름을 지어주는 것
+    class name 주의사항: 콘텐츠에 알맞은 이름을 지어주어야함 -->
+    
+    <p class="meow1" title="사랑합니다~^^">고양이에 관한 텍스트</p>
+    <p class="dog">강아지에 관한 텍스트</p>
+    <hr>
+    <p class="meow">김춘배</p>
+
+    <!-- id : 한 문서 내에 고유한 id이름을 부여한다. -->
+    <section id="id_section" data-target="my_target"></section>
+
 </body>
 </html>
