@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤더실습</title>
+    <style>
+        div {
+            height: 50px;
+        }
+
+        .top_section {
+            display: flex;
+        
+        }
+        .content_section {
+            height: 50px;
+            width: 100%;
+            background-color: pink;
+            display: flex;
+            justify-content: space-between;    
+        }
+        .each_section {
+            justify-content: space-between;
+            flex-direction: row;  
+
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <section class="top_section">
+        <div class="content_section">
+            <div class="each_section">
+                <div class="logo">LOGO</div>
+            </div>
+
+            <div class="each_section">
+                <a href="#" class="center">About</a>
+                <a href="#" class="center">Skill</a>
+                <a href="#" class="center">Portfolio</a>
+                <a href="#" class="center">contact</a>
+            </div>
+
+            <div class="each_section">
+                <div class="right">로그인</div>
+                <div class="right">회원가입</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
