@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header실습</title>
+    <title>헤더구조실습</title>
     <style>
+        body {
+            margin: 0;
+        }
+
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: pink;
+            background: blueviolet;
             padding: 0 50px;
         }
 
         .menu,
-        .sing_zone {
-            display: flex;            
+        .sign_zone {
+            display: flex;
         }
 
         .menu {
@@ -25,19 +28,14 @@
             padding: 0;
         }
 
-
-        .menu > li > a 
-        .sing_zone > div > a {
+        .menu > li > a,
+        .sign_zone > div > a {
             padding: 16px;
             text-decoration: none;
-            color: #fff 
-            /* a태그의 범위를 넓혀주기 위해 */
+            color: #fff;
         }
-
-
     </style>
 </head>
-
 <body>
     <header>
         <h1 class="logo">
@@ -61,13 +59,12 @@
 
         <div class="sign_zone">
             <div>
-                <a href="#">로그인</a>
+                <a href="#">LOG IN</a>
             </div>
             <div>
-                <a href="#">회원가입</a>
+                <a href="#">SIGN UP</a>
             </div>
         </div>
     </header>
 </body>
-
 </html>
