@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드구성</title>
+    <style>
+        body {
+            width: 1200px;
+            height: 800px;
+            margin: 0 auto;
+            
+
+        }
+
+        .container {
+            
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+
+        /* img {
+            width: 200px;
+            height: 300px;
+        } */
+
+        .inside {
+            width: 250px;
+            height: 350px;
+            background-image: url(./성당);
+            background-size: cover;
+            box-sizing: cover;
+            position: relative;
+           border-radius: 8px;
+        }
+
+        a {
+            position: absolute;
+            bottom: 32px;
+            left: 32px;
+            text-decoration: none;
+            text-align: center;
+            width: 100px;
+            height: 48px;
+            background-color: white;
+            color: black;
+            border-radius: 8px;
+            line-height: 48px;
+        }
+
+        .text {
+            position: absolute;
+            top: 32px;
+            left: 32px;                     
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="inside">
+            <!-- <img src="./성당" alt="성당"> -->
+            <a href="#">둘러보기</a>
+            <div class="text">바르셀로나</div>
+        </div>
+        <div class="inside">
+            <!-- <img src="./성당" alt="성당"> -->
+            <a href="#">둘러보기</a>
+            <div class="text">바르셀로나</div>
+        </div>
+        <div class="inside">
+            <!-- <img src="./성당" alt="성당"> -->
+            <a href="#">둘러보기</a>
+            <div class="text">바르셀로나</div>
+        </div>
+        <div class="inside">
+            <!-- <img src="./성당" alt="성당"> -->
+            <a href="#">둘러보기</a>
+            <div class="text">바르셀로나</div>
+        </div>
+    </section>
+    
+</body>
+</html>
