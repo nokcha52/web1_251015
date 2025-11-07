@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>HTML & CSS 핵심 정리</title>
+<style>
+  body {
+    font-family: "Malgun Gothic", sans-serif;
+    background-color: #f9fbff;
+    color: #222;
+    line-height: 1.6;
+    margin: 40px;
+  }
+  h1 {
+    text-align: center;
+    color: #3399ff;
+    border-bottom: 3px solid #3399ff;
+    padding-bottom: 10px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #d9ebff;
+  }
+  tr:nth-child(even) td {
+    background-color: #f4f8ff;
+  }
+  h2 {
+    color: #005fcc;
+    margin-top: 40px;
+  }
+  .explain {
+    background: #eef6ff;
+    border-left: 4px solid #3399ff;
+    padding: 10px 15px;
+    margin-top: -10px;
+    white-space: pre-line;
+  }
+  .emoji-title {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #0044aa;
+  }
+</style>
+</head>
+<body>
+
+<h1>HTML & CSS 핵심 정리</h1>
+
+<!-- HTML 태그 정리 -->
+<h2>🧱 HTML 태그 정리표</h2>
+<table>
+  <tr>
+    <th>분류</th><th>태그</th><th>역할 / 설명</th><th>자주 쓰는 속성</th>
+  </tr>
+  <tr>
+    <td>문서 구조</td><td>&lt;html&gt;, &lt;head&gt;, &lt;body&gt;</td><td>웹 문서의 기본 뼈대를 구성</td><td>lang, charset, title</td>
+  </tr>
+  <tr>
+    <td>구획(레이아웃)</td><td>&lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, &lt;div&gt;</td><td>페이지를 의미 있는 영역으로 구분</td><td>class, id</td>
+  </tr>
+  <tr>
+    <td>텍스트</td><td>&lt;h1&gt;~&lt;h6&gt;, &lt;p&gt;, &lt;span&gt;, &lt;strong&gt;, &lt;em&gt;</td><td>제목, 문단, 강조, 인라인 텍스트</td><td>—</td>
+  </tr>
+  <tr>
+    <td>링크 & 이미지</td><td>&lt;a&gt;, &lt;img&gt;</td><td>링크 연결, 이미지 삽입</td><td>href, target, src, alt</td>
+  </tr>
+  <tr>
+    <td>목록</td><td>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td><td>순서 있는/없는 목록 표현</td><td>type</td>
+  </tr>
+  <tr>
+    <td>표</td><td>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</td><td>데이터를 행과 열로 정리</td><td>border, colspan, rowspan</td>
+  </tr>
+  <tr>
+    <td>폼</td><td>&lt;form&gt;, &lt;input&gt;, &lt;label&gt;, &lt;button&gt;, &lt;select&gt;, &lt;textarea&gt;</td><td>사용자 입력을 받는 폼 요소</td><td>type, name, value, placeholder</td>
+  </tr>
+  <tr>
+    <td>기타 시맨틱 태그</td><td>&lt;main&gt;, &lt;figure&gt;, &lt;figcaption&gt;</td><td>문서의 주요 콘텐츠나 이미지 설명 등</td><td>—</td>
+  </tr>
+</table>
+
+<div class="explain">
+📘 <b>HTML 태그 상세 설명</b>
+
+📜 <b>문서 구조</b>
+● &lt;html&gt; : 문서 전체를 감싸는 루트 요소  
+● &lt;head&gt; : meta, link, title 등 “화면에 보이지 않는 정보”  
+● &lt;body&gt; : 실제 화면에 출력되는 내용  
+
+🧱 <b>구획(레이아웃)</b>
+● &lt;header&gt; : 페이지 상단 정보  
+● &lt;nav&gt; : 메뉴 / 링크 목록  
+● &lt;section&gt; : 주제 단위 구획  
+● &lt;article&gt; : 독립적으로 재사용 가능한 글/게시물  
+● &lt;aside&gt; : 부가 정보  
+● &lt;footer&gt; : 하단 영역  
+● &lt;div&gt; : 의미 없이 묶는 컨테이너  
+
+✏️ <b>텍스트</b>
+● &lt;h1&gt;~&lt;h6&gt; : 제목  
+● &lt;p&gt; : 문단  
+● &lt;span&gt; : 인라인 스타일 적용  
+● &lt;strong&gt; : 중요한 의미의 굵은 글씨  
+● &lt;em&gt; : 기울여 강조  
+
+🔗 <b>링크 & 이미지</b>
+● &lt;a&gt; : 페이지 이동  
+● &lt;img&gt; : 이미지 삽입  
+
+📋 <b>목록</b>
+● &lt;ul&gt; : 순서 없음  
+● &lt;ol&gt; : 순서 있음  
+● &lt;li&gt; : 목록 항목  
+
+📊 <b>표</b>
+● &lt;table&gt; : 표 전체  
+● &lt;tr&gt; : 행  
+● &lt;th&gt; : 제목 셀  
+● &lt;td&gt; : 일반 셀  
+
+📝 <b>폼</b>
+● 사용자 입력 / 전송 요소 모음  
+</div>
+
+
+
+<!-- CSS 속성 정리 -->
+<h2>🎨 CSS 속성 정리표</h2>
+
+<table>
+  <tr>
+    <th>분류</th><th>속성</th><th>설명</th><th>예시</th>
+  </tr>
+  <tr><td>글꼴</td><td>font-family, font-size, font-weight, color</td><td>글자 형태 및 스타일 지정</td><td>font-size: 16px;</td></tr>
+  <tr><td>배경</td><td>background-color, background-image</td><td>요소의 배경 설정</td><td>background-color:#eee;</td></tr>
+  <tr><td>박스모델</td><td>margin, padding, border, width, height</td><td>요소 크기와 여백 설정</td><td>margin:20px;</td></tr>
+  <tr><td>정렬/텍스트</td><td>text-align, line-height</td><td>텍스트 정렬/줄높이 설정</td><td>text-align:center;</td></tr>
+  <tr><td>디스플레이</td><td>display, visibility, overflow</td><td>요소 표시 방식</td><td>display:flex;</td></tr>
+</table>
+
+<div class="explain">
+📘 <b>CSS 상세 설명</b>
+
+🎨 <b>글꼴 관련 속성</b>
+● font-family : 사용할 글꼴 지정  
+● font-size : 글자 크기(px, em, rem)  
+● font-weight : 글자의 굵기(bold, 700 등)  
+● color : 글자색  
+
+🖼️ <b>배경 관련 속성</b>
+● background-color : 배경색  
+● background-image : 이미지 배경  
+● background-size : cover / contain  
+● background-repeat : 반복 여부  
+● background-position : 배경 이미지 위치  
+
+📦 <b>박스 모델(Box Model)</b>
+● margin : 요소 바깥 여백  
+● padding : 요소 내부 여백  
+● border : 테두리  
+● width/height : 요소 크기  
+● box-sizing : border-box 사용 시 크기 계산이 편함  
+
+🧩 <b>정렬 & 텍스트</b>
+● text-align : left / center / right  
+● line-height : 줄 간격  
+● letter-spacing : 자간 설정  
+
+🔲 <b>디스플레이(Display)</b>
+● display:block : 줄 전체 차지  
+● display:inline : 콘텐츠만큼 차지  
+● display:flex : 플렉스 컨테이너  
+● visibility:hidden : 숨기지만 공간은 유지  
+● overflow:hidden : 넘치면 잘라내기  
+</div>
+
+
+
+<!-- Position -->
+<h2>📍 Position 속성 정리표</h2>
+
+<table>
+  <tr><th>속성</th><th>기준</th><th>특징</th><th>예시</th></tr>
+  <tr><td>static</td><td>없음</td><td>기본 문서 흐름</td><td>position: static;</td></tr>
+  <tr><td>relative</td><td>자기 자신</td><td>원래 위치를 유지한 채 이동</td><td>top: 10px;</td></tr>
+  <tr><td>absolute</td><td>가장 가까운 position 있는 부모</td><td>문서 흐름에서 제거</td><td>right: 0;</td></tr>
+  <tr><td>fixed</td><td>브라우저 화면</td><td>스크롤해도 고정</td><td>bottom: 0;</td></tr>
+  <tr><td>sticky</td><td>스크롤 지점</td><td>relative → fixed로 전환</td><td>top: 0;</td></tr>
+</table>
+
+<div class="explain">
+📘 <b>Position 상세 설명</b>
+
+📍 <b>static</b>  
+● 기본값, 좌표(top,left) 적용되지 않음  
+
+📍 <b>relative</b>  
+● 원래 위치를 기준으로 이동  
+● 이동해도 원래 자리는 유지  
+
+📍 <b>absolute</b>  
+● position이 지정된 부모 기준  
+● 문서 흐름에서 빠져 주변 레이아웃에 영향 없음  
+● 툴팁, 모달, 드롭다운 등에서 많이 사용  
+
+📍 <b>fixed</b>  
+● 화면(viewport) 기준  
+● 스크롤해도 위치가 고정  
+● 상단 고정 헤더 등에 사용  
+
+📍 <b>sticky</b>  
+● 스크롤 위치에 따라 relative → fixed로 변함  
+● “상단고정 메뉴” 구현 시 가장 많이 사용  
+</div>
+
+
+
+<!-- Flexbox -->
+<h2>🧭 Flexbox 핵심 정리표</h2>
+
+<table>
+  <tr><th>속성</th><th>설명</th><th>예시</th></tr>
+  <tr><td>display:flex</td><td>플렉스 컨테이너 지정</td><td>display:flex;</td></tr>
+  <tr><td>flex-direction</td><td>주축 방향 설정</td><td>row / column</td></tr>
+  <tr><td>justify-content</td><td>가로(주축) 정렬</td><td>center, space-between</td></tr>
+  <tr><td>align-items</td><td>세로(교차축) 정렬</td><td>center, flex-start</td></tr>
+  <tr><td>flex-wrap</td><td>줄바꿈 여부</td><td>wrap / nowrap</td></tr>
+  <tr><td>gap</td><td>아이템 간 간격</td><td>gap:20px;</td></tr>
+  <tr><td>flex</td><td>item의 유연성 제어</td><td>flex:1;</td></tr>
+</table>
+
+<div class="explain">
+📘 <b>Flexbox 상세 설명</b>
+
+🧭 <b>display:flex</b>  
+● 부모 요소를 Flex 컨테이너로 만듦  
+● 자식 요소는 자동으로 flex item  
+
+📏 <b>flex-direction</b>  
+● row : 가로(기본)  
+● column : 세로 배치  
+
+⚖️ <b>justify-content (주축 정렬)</b>  
+● flex-start : 왼쪽  
+● center : 가운데  
+● space-between : 양쪽 끝 + 균등 간격  
+
+🎯 <b>align-items (교차축 정렬)</b>  
+● center : 세로 중앙  
+● flex-start : 위쪽  
+● flex-end : 아래쪽  
+
+🧩 <b>flex-wrap</b>  
+● nowrap : 한 줄  
+● wrap : 여러 줄  
+
+📐 <b>gap</b>  
+● 아이템 사이 간격을 일정하게 만듦  
+
+🧱 <b>flex</b>  
+● flex-grow : 남는 공간 차지 비율  
+● flex-shrink : 줄어드는 비율  
+● flex-basis : 기본 크기  
+● flex: 1 은 “남는 공간 균등 분배”  
+
+✅ <b>대표 예시</b>
+
+display:flex;  
+justify-content:center;  
+align-items:center;  
+
+→ 완벽한 가로·세로 중앙 정렬
+</div>
+
+</body>
+</html>
