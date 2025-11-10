@@ -13,17 +13,13 @@
         .menu_hover_effect>ul {
             list-style: none;
             display: flex;
-            padding: 0;
-            
-
+            padding: 0;          
         }
 
         .menu_hover_effect>ul>li {
-            margin: 16px;
-            /* padding: 10px 50px;
-            width: 200px;
-            justify-content: space-between; */
+            margin: 16px;         
             text-align: center;
+            display: flex;
         }
 
         .menu_hover_effect a {
@@ -35,9 +31,8 @@
             line-height: 24px;
             padding: 10px 20px;
             width: 100px;
-            background-color: black;
-            /* box-sizing: 200px 20px; */
-            
+            height: 32px;
+            flex: block;                     
             transition: 0.5s;
         }
 
@@ -62,12 +57,12 @@
             position: absolute;
             left: 0;
             top: 100%;
-            transition: width 0.3s;
-            
+            transition: width 0.3s;            
         }
 
         .menu_hover_effect a:hover {
-            border: 0;
+            border: 1;
+            border-color: rgb(0,0,0,0);
         }
 
         .menu_hover_effect li:hover a::before {
@@ -77,8 +72,6 @@
         .menu_hover_effect li:hover a::after {
             width: 0;
         }
-
-
     </style>
 </head>
 
