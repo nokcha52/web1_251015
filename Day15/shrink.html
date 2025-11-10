@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shrink</title>
+    <style>
+        .box_container {
+            width: 1500px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box_item {
+            display: flex;            
+            flex-direction: row;
+            justify-content: space-between;          
+            box-sizing: border-box;
+
+        }
+
+        .box_item1 {
+            width: 300px;
+            height: 400px;
+            border-radius: 12px;
+            background-image: url(./1.jpg);
+            box-sizing: content-box;
+        }
+
+        .box_item2 {
+            width: 300px;
+            height: 400px;
+            border-radius: 12px;
+            background-image: url(./2.jpg);
+            box-sizing: content-box;
+        }
+
+        .box_item3 {
+            width: 300px;
+            height: 400px;
+            border-radius: 12px;
+            background-image: url(./3.jpg);
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="box_container">
+        <div class="box_item">
+            <div class="box_item1">
+                <h2>environmental</h2>
+                <h3>환경</h3>
+            </div>
+        </div>
+    </section>
+    <section class="box_container">
+        <div class="box_item">
+            <div class="box_item2">
+                <h2>Social</h2>
+                <h3>사회</h3>
+            </div>
+        </div>
+    </section>
+    <section class="box_container">
+        <div class="box_item">
+            <div class="box_item3">
+                <h2>Governance</h2>
+                <h3>지배구조</h3>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

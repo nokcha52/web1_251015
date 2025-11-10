@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 100%;
+            display: flex;
+            gap: 24px;
+        }
+
+        article {
+            width: 50%;
+            height: 500px;
+            border-radius: 24px;
+            transition: 0.5s;
+        }
+
+        article:first-child {
+            background: url(./1.jpg);
+        }
+        article:nth-child(2) {
+            background: url(./2.jpg);
+        }
+        article:nth-child(3) {
+            background: url(./3.jpg);
+        }
+
+        .box {
+            background: rgb(0, 0, 0, 0.6);
+            height: 500px;
+            padding: 100px 24px;
+            box-sizing: border-box;
+            border-radius: 24px;
+            color: #fff;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 48px;
+        }
+
+        .hidden_text {
+            /* display: none; */
+            opacity: 0;
+        }
+
+        article:hover .hidden_text {
+            /* display: block; */
+            transition: 0.5s;
+            opacity: 1;
+        }
+
+        article:hover {
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: 20% 70%;
+        }
+
+        article:hover .box {
+            background-color: rgb(0, 0, 0 ,0.2)
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <div class="box">
+                <p>Environmental</p>
+                <h2>환경</h2>
+                <div class="hidden_text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero repudiandae expedita maiores facere velit consectetur pariatur adipisci facilis, aliquid corporis nesciunt molestias atque iste alias minus ullam et officia rem!</p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="box">
+                <p>Social</p>
+                <h2>사회</h2>
+                <div class="hidden_text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero repudiandae expedita maiores facere velit consectetur pariatur adipisci facilis, aliquid corporis nesciunt molestias atque iste alias minus ullam et officia rem!</p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="box">
+                <p>Governance</p>
+                <h2>지배구조</h2>
+                <div class="hidden_text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero repudiandae expedita maiores facere velit consectetur pariatur adipisci facilis, aliquid corporis nesciunt molestias atque iste alias minus ullam et officia rem!</p>
+                </div>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
