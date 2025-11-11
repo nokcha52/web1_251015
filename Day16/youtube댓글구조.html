@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             
+        section {
+            display: flex;
+            width: 1200px;
+            height: 500px;
+            justify-content: center;
+            margin: 0 auto;
+            position: relative;
+            
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        
+        .id_image1 {
+            position: relative;
+
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-image: url(./jazzposter.jpg);
+            background-size: cover;
+        }
+
+        .id_image2 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-image: url(./jazzposter.jpg);
+            background-size: cover;
+            
+        }
+
+        .id_section {
+            padding: 50px;
+        }
+
+        .btn_choice {
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .arrow {
+            background-image: url(./free-icon-down-arrow-892498.png);
+            width: 16px;
+            height: 16px;
+            background-size: cover;
+            transform: translateY(4px);
+        }
+
+        .answer_section {
+            width: 10%;
+            height: 16px;
+        }
+
+        .answer {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="id_section">
+            <div class="id_image1"></div>
+            <img src="" alt="">
+        </div>
+        <div>
+            <div>
+                <h2>@dreamjazzcafe</h2>
+                <p>이 플레이리스트는 정말 멋져 보여요! 재즈는 제 기분을 행복하고 편안하게 만들 수 있어요. 특히 봄의 분위기와 조화를 이루면, 매우 신선하고 상쾌한 분위기를 만들어줄 거예요. 이 플레이 리스트를 준 것에 감사합니다.</p>
+            </div>
+            <div class="btn_choice">
+                <a>
+                    <img src="./good.png" alt="good">
+                    <span>4</span>
+                </a>
+                <a>
+                    <img src="./bad.png" alt="bad">
+                    <span></span>
+                </a>
+                <div class="id_image2"></div>
+                <div>답글</div>
+            </div>
+            <div class="answer_section">
+                <a href="#" class="answer">
+                    <div class="arrow"></div>                    
+                    <span>답글 1개</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
