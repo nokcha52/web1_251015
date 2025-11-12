@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5dece3bbcb.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .comment_container {
+            display: flex;
+            width: 1200px;
+            justify-content: space-between;
+            margin: 50px auto;
+        }
+
+        figure > img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .basis {
+            flex-basis: 90%;
+        }
+
+        h2,
+        .comment_container {
+            font-size: 14px;
+        }
+
+        .icon_box,
+        .recomment_box {
+            display: flex;
+            align-items: center;
+            margin: 16px 0;
+            gap: 16px;
+        }
+
+        .icon_box > figure,
+        .icon_box > figure >img {
+            width: 24px;
+            height: 24px;
+        }
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .recomment_box,
+        .recomment_box > button {
+            color: blue;
+        }
+
+        .icon_box > p,
+        .recomment_box > p {
+            font-size: 14px;
+            padding: 8px 10px;
+            border-radius: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .icon_box > p:hover,
+        .recomment_box > p:hover {
+            background: rgb(161, 161, 161);
+            color: #fff;
+        }
+
+        
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <article class="comment_container">
+        <figure>
+            <img src="./jazzposter.jpg" alt="프로필">
+        </figure>
+
+        <div class="basis">
+            <h2>@dreamMusic</h2>
+            <p class="comment_content">
+                이 플레이리스트는 정말 멋져 보여요! 재즈는 제 기분을 행복하고 편안하게 만들 수 있어요. 특히 봄의 분위기와 조화를 이루면, 매우 신선하고 상쾌한 분위기를 만들어줄 거예요. 이 플레이
+                리스트를 준 것에 감사합니다
+            </p>
+
+            <div class="icon_box">
+                <!-- 좋아요 박스 -->
+                <div>
+                    <button>
+                        <!-- 폰트어썸 좋아요 아이콘 넣을거임 -->
+                        <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                    </button>
+
+                    <span>82</span>
+                </div>
+                <!-- 싫어요 박스 -->
+                <div>
+                    <button>
+                        <!-- 폰트어썸 싫어요 아이콘 넣을거임 -->
+                        <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                    </button>
+                </div>
+
+                <figure>
+                    <img src="./jazzposter.jpg" alt="프로필이미지">
+                </figure>
+
+                <p>답글</p>
+            </div>
+
+            <div class="recomment_box">
+                <button>
+                    <!-- 아래꺽쇄이미지 들어갈 자리 chervon-->
+                    <i class="fa-solid fa-chevron-down fa-xl"></i>
+                </button>
+                <p>
+                    답글 1개
+                </p>
+            </div>
+        </div>
+
+        <div class="">
+            <button>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+        </div>
+    </article>
+    <article class="comment_container">
+        <figure>
+            <img src="./jazzposter.jpg" alt="프로필">
+        </figure>
+
+        <div class="basis">
+            <h2>@dreamMusic</h2>
+            <p class="comment_content">
+                이 플레이리스트는 정말 멋져 보여요! 재즈는 제 기분을 행복하고 편안하게 만들 수 있어요. 특히 봄의 분위기와 조화를 이루면, 매우 신선하고 상쾌한 분위기를 만들어줄 거예요. 이 플레이
+                리스트를 준 것에 감사합니다
+            </p>
+
+            <div class="icon_box">
+                <!-- 좋아요 박스 -->
+                <div>
+                    <button>
+                        <!-- 폰트어썸 좋아요 아이콘 넣을거임 -->
+                        <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                    </button>
+
+                    <span>82</span>
+                </div>
+                <!-- 싫어요 박스 -->
+                <div>
+                    <button>
+                        <!-- 폰트어썸 싫어요 아이콘 넣을거임 -->
+                        <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                    </button>
+                </div>
+
+                <figure>
+                    <img src="./jazzposter.jpg" alt="프로필이미지">
+                </figure>
+
+                <p>답글</p>
+            </div>
+
+            <div class="recomment_box">
+                <button>
+                    <!-- 아래꺽쇄이미지 들어갈 자리 chervon-->
+                    <i class="fa-solid fa-chevron-down fa-xl"></i>
+                </button>
+                <p>
+                    답글 1개
+                </p>
+            </div>
+        </div>
+
+        <div class="">
+            <button>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+        </div>
+    </article>
+</body>
+
+</html>
