@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        section {
+            width: 100%;
+            display: flex;
+            gap: 24px;
+        }
+
+        .img {
+            width: 50%;
+            height: 500px;
+            border-radius: 12px;
+            background-size: cover;
+            transition: 0.3s;
+        }
+
+        .img:first-child {
+            background-image: url(./1.jpg)
+        }
+
+        .img:nth-child(2) {
+            background-image: url(./2.jpg);
+        }
+
+        .img:nth-child(3) {
+            background-image: url(./3.jpg);
+        }
+
+        .img > div {
+            padding: 100px 20px;
+            color: white;
+            background-color: rgb(0,0,0,0.7);
+            height: 100%;
+            box-sizing: border-box;
+            border-radius: 12px;
+        }
+
+        .hidden_text {
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .img:hover div{
+            background-color: rgb(0,0,0,0.2);         
+        }
+
+        .img:hover {
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: 20% 70%;
+        }
+
+        .img:hover p {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="img">
+            <div>
+                <h2>Environmental</h2>
+                <p>환경</p>
+                <p class="hidden_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti magni, neque reprehenderit nostrum maiores nisi fugiat inventore, corporis porro nobis beatae tempore at quidem, architecto vitae suscipit voluptatibus expedita?</p>
+            </div>            
+        </div>
+        <div class="img">
+            <div>
+                <h2>Social</h2>
+                <p>사회</p>
+                <p class="hidden_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, recusandae ducimus natus facilis dolore laudantium ipsam voluptatum quidem? Ducimus aliquam maxime sit voluptatibus recusandae repellat veritatis omnis et accusamus sapiente.</p>
+            </div>            
+        </div>
+        <div class="img">
+            <div>
+                <h2>Goverance</h2>
+                <p>지배구조</p>
+                <p class="hidden_text">,Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique numquam dignissimos consequatur modi repellendus non dolore, voluptatem perspiciatis id aut libero tenetur corporis voluptates quibusdam voluptatibus, in delectus architecto pariatur.</p>
+            </div>            
+        </div>
+    </section>
+    
+</body>
+</html>

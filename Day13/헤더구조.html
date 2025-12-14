@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤더구조</title>
+    <style>
+        header {
+            top: 0;
+            height: 100px;
+            background-color: pink;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+       
+
+        h1 {
+            margin-left: 16px;
+            align-items: center;
+        }
+
+        .menu,
+        .sign_zone {
+            display: flex;
+            list-style: none;
+            
+        }
+        
+        li > a {
+            padding: 16px;
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <ul class="menu">
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Skill</a>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+
+        <ul class="sign_zone">
+            <li>
+                <a href="">Log in</a>
+            </li>
+            <li>
+                <a href="">Sign up</a>
+            </li>
+        </ul>
+        
+    </header>
+
+
+</body>
+</html>
